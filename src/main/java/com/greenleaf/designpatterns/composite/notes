@@ -1,0 +1,7 @@
+The composite design pattern has 3 aspects to it:
+-Leaf
+-Component
+    The Component class specifies the common behavior expected of the leaf classes.
+    This class is used to generalize the behavior in the Composite class
+    This class allows the leaf classes to be used in a single collection
+-Base Component or Composite

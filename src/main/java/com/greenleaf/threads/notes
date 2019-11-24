@@ -1,0 +1,64 @@
+Resources
+-------------------
+https://dzone.com/articles/dnp-java-concurrency-%E2%80%93-part-3?edition=526301&utm_source=Daily%20Digest&utm_medium=email&utm_campaign=Daily%20Digest%202019-10-19
+https://dzone.com/articles/how-to-avoid-deadlock-in-java-threads-1
+
+
+
+Data Caching
+Threads interweaving
+
+
+volatile  and basic thread synchronization
+
+
+Optimizing of Java
+
+You'll have the following scenario:
+-One thread writes to a variable
+-Another thread reads from that variable
+
+
+This answers the question....when/why do I use volatile?
+If the reader thread does not have in its code a write to a 'shared variable', then java (some implementations) could optimize
+and cache this variable since it does not expect any updates to it (no explicit code within that thread to change it).
+Using the Keyword "volatile" will force the each thread to not use its cached version.
+
+In general, when a DS is indexed it is faster to work with and travers, access/look up. (probably constant time)
+But it uses less memory than a Linked list DS.
+
+Nuance -  Datastructures usually( or must?) have an inital size right?
+We can't just set an infinit number of items/elements
+
+O(n) - Linear time
+O(1) - Constant time
+
+Stacks  [LIFO]
+push() - place on top of stack
+pop() - takes from top of stack
+
+Implementation can be based on arrays (fixed/bounded dimensions) or LinkedLists (dynamic dimensions)
+
+Queue [FIFO]
+
+
+Hash table (computer science concept)
+Offers contant access time
+Java has the HashMap implementation of a hash table.
+--what is the initial size?
+--how does it increase/decrease?
+--what is the underlying list?
+Usually are Key-Value pairs
+
+Key elements:
+A hash function  [h(x)]
+An underlying list  (where the values are stored)
+An operation where given a Key, we generate the hash using the hash function to generate an Index
+-The index is used to determine the location (the 'where') of storage for the value.
+
+        ______________
+Key -> | HashFunction | -> (loc)-location in the underlying list (DS)
+        --------------
+
+A collision is when the hash function h(x) produces the same location value for 2 different keys.
+A scheme needs to be employed in this case to resolve the collision.(different algorithms)

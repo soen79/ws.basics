@@ -1,0 +1,17 @@
+Mini 2 hour project
+Some kind of parser
+Data bridge
+Data processor
+Decision Tree Logic
+
+
+Code Quality Metrics
+Testing - Cucumber
+User Interface
+
+
+Requirements [9:50am]
+Make a program that goes through the Desktop and sorts the files by most recently used
+Display 'attributes' such as fileType, size, date last opened/modified, file name
+Create a organized Desktop folder
+ copy the files into sub folders (organized by file type and mosted used)
